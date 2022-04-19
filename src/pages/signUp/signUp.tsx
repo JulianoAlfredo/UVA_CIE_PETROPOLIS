@@ -14,7 +14,10 @@ export default function SignUp(){
             idade: age, 
             situacao: situation, 
             senha: password
-        }).then(res =>{console.log(res)})
+        }).then(res =>{ 
+            console.log(res)            
+        })
+
     }
     return(
         <div className="div-main-signup">

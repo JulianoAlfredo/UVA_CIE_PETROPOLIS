@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import API from '../../api/api';
 import './login.css'
 
-
 export default function LoginPage(){
     const [user, setUser] = useState(String)
     const [password, setPassword] = useState(String)
@@ -10,8 +9,11 @@ export default function LoginPage(){
         API.post('/loginUsuario', {
             usuario: user,
             senha: password
-        }).then(res => {
-            alert(res.data)
+        }).then(async res => {
+            if(res.status === 200){
+                localStorage.setItem("user_info", res.data)
+                window.location.href = "http://localhost:3000/"
+            }
         })
     }
     return(

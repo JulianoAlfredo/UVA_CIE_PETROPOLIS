@@ -1,14 +1,22 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './mainPage.css'
 
 export default function MainPage(){
+    const [usuario, setUsuario] = useState(String)
+    useEffect(() =>{
+        var nome = String(localStorage.getItem("user_info"))
+        setUsuario(nome)
+        console.log(nome)
+    }, []
+    )
+
     return(
         <div className="maingPageDiv">
             <div className='bgMain'></div>
 
             <div className='content-main'>
                 <div className='header-main'>
-                    <p>Olá, usuário</p>
+                    <p>Olá, {usuario}</p>
                     <button className='blue'>Notícias</button>
                     <button className='orange'>Desaparecidos</button>
                     <button className='red'>Cadastro Desaparecido</button>

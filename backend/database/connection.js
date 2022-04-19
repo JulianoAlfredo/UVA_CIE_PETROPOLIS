@@ -15,7 +15,7 @@ module.exports = {
         con.query(`SELECT * FROM users WHERE name="${user.usuario}"`, function(a, b,c ){
             
             if(b[0].password === user.senha){
-                resJu.send("LOGADO")
+                resJu.send(String(b[0].name))
             }
         })
     },
@@ -24,6 +24,7 @@ module.exports = {
 
         con.query(`INSERT INTO users(name, situation, age, password) VALUES("${user.nome}", "${user.situacao}", ${user.idade},"${user.senha}" )`, function(a, b, c){
             console.log(b)
+            resJu.send("cadastrado")
         })
         
     }

@@ -6,6 +6,7 @@ import login from '../pages/login/login'
 import signUp from '../pages/signUp/signUp'
 import MainPage from '../pages/mainPage/main'
 import DesaparecidoPage from '../pages/desaparecidos/desaparecidoPage'
+
 export default function Routes(){
     return(
         <BrowserRouter>
