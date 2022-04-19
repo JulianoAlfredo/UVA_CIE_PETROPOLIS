@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import './signUp.css'
+import API from "../../api/api";
 
 export default function SignUp(){
 
@@ -8,7 +9,12 @@ export default function SignUp(){
     const [situation, setSituation] = useState(String)
     const [password, setPassword] = useState(String)
     function cadastrarUsuario(name:String, age:Number, situation:String, password:String){
-        
+        API.post('/cadastrarUsuario', {
+            nome: name, 
+            idade: age, 
+            situacao: situation, 
+            senha: password
+        }).then(res =>{console.log(res)})
     }
     return(
         <div className="div-main-signup">
