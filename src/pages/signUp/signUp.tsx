@@ -1,26 +1,34 @@
-import React from "react";
+import React, {useState} from "react";
 import './signUp.css'
 
 export default function SignUp(){
+
+    const [name, setName] = useState(String)
+    const [age, setAge] = useState(Number)
+    const [situation, setSituation] = useState(String)
+    const [password, setPassword] = useState(String)
+    function cadastrarUsuario(name:String, age:Number, situation:String, password:String){
+        
+    }
     return(
         <div className="div-main-signup">
             <div className="bg"></div>
             <p>Cadastro</p>
             <div className='signUp-modal'>
-                <input type="text" placeholder="Digite seu nome completo" />
+                <input onChange={(event) => {setName(event.target.value)}} type="text" placeholder="Digite seu nome completo" />
                     <div className='signUp-modal-userSituation'>
                         <div className='signUp-modal-user'>
                             <p>Sua situação</p>
-                            <input placeholder="digite"/>
+                            <input  onChange={(event) => {setSituation(event.target.value)}} placeholder="digite"/>
                         </div>
 
                         <div className='signUp-modal-user'>
                             <p>Sua idade</p>
-                            <input placeholder="digite"/>
+                            <input onChange={(event) => {setAge(Number(event.target.value))}} placeholder="digite"/>
                         </div>
                     </div>  
-                <input type='password' placeholder="Digite sua senha" />
-                <button>Realizar cadastro</button>
+                <input  onChange={(event) => {setPassword(event.target.value)}} type='password' placeholder="Digite sua senha" />
+                <button onClick={() =>{cadastrarUsuario(name, age, situation, password)}}>Realizar cadastro</button>
                 
             </div>
         </div>
