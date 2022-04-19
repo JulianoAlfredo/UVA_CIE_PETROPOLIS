@@ -4,13 +4,19 @@ const bodyParser = require('body-parser')
 const app = express()
 const port = process.env.PORT || 3001
 
+const db = require('./database/connection')
 
 app.use(require("cors")())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json())
 
 
-app.get('/')
+app.post('/loginUsuario', async(req, res) => {
+    await db.login_user(req, res)
+})
+app.post('/cadastrarUsuario', async(req, res) =>{
+    await db.create_user(req, res)
+})
  
 
 app.listen(port, () =>{
