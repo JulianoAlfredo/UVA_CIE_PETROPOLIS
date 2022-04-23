@@ -17,8 +17,8 @@ export default function MainPage(){
             <div className='content-main'>
                 <div className='header-main'>
                     <p>Olá, {usuario}</p>
-                    <button className='blue'>Notícias</button>
-                    <button className='orange'>Desaparecidos</button>
+                    <button onClick={() => { window.location.href = "http://localhost:3000/noticias"}} className='blue'>Notícias</button>
+                    <button onClick={() => { window.location.href = "http://localhost:3000/desaparecidos"}} className='orange'>Desaparecidos</button>
                     <button className='red'>Cadastro Desaparecido</button>
                 </div>
                 <div className='user-situation-main'>

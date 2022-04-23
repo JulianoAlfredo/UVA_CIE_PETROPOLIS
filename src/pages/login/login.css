@@ -81,7 +81,7 @@
     font-weight: bold;
     
 }
-.login-modal > button{
+.login-btn{
     width: 50%;
     height: 9%;
     color: #fff;
@@ -89,4 +89,25 @@
     font-size: 2rem;
     border: 0 none;
     border-radius: 30px;
+}
+.login-btn:focus{
+
+    animation: btn-anim 2s infinite;
+}
+
+@keyframes btn-anim {
+    0%{
+        width: 40%;
+    }
+    50%{
+        width: 30%;
+        font-size: 1rem;
+    }
+    100%{
+        width: 8%;
+        font-size: 0rem;
+        background-color: #00ff22;
+        border: 0 none;
+        border-radius: 50px;
+    }
 }

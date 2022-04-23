@@ -26,9 +26,9 @@ export default function LoginPage(){
                     <input onChange={(ev) =>{setPassword(ev.target.value)}}  type='password' placeholder='Digite sua senha ' />
                 </div>
                 <div className='login-modal-register'>
-                    <p>Não tem login?</p> <a href='http://localhost:3000/login'>CADASTRE-SE</a>
+                    <p>Não tem login?</p> <a href='http://localhost:3000/cadastrar'>CADASTRE-SE</a>
                 </div>
-                <button onClick={() =>{loginUser(user, password)}}>Fazer login</button>               
+                <button className="login-btn" onClick={() =>{loginUser(user, password)}}>Fazer login</button>               
                 
             </div>
         </div>

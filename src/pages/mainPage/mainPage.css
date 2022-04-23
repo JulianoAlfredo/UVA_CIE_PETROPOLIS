@@ -49,14 +49,14 @@
     padding: 2rem 0;
 }
 .header-main > p{
-    font-size: 2.4rem;
+    font-size: calc(1.4vh + 1rem);
     font-weight: bold;
 }
 .header-main > button{
     width: 13vw;
     height: 4.2vh;
 
-    font-size: 2.2rem;
+    font-size: calc(1.6vh + 0.2rem);
     color: #fff;
     font-weight: bold;
     
@@ -125,9 +125,20 @@
 .blue{
     background-color: #3935F2;
 }
+.blue:hover{
+    background-color: #6a68f8;
+}
+
 .orange{
     background-color: #FF7A00;
 }
+.orange:hover{
+    background-color: #ffa149;    
+}
+
 .red{
     background-color: #FF0000;
+}
+.red:hover{
+    background-color: #ff5b5b;
 }
