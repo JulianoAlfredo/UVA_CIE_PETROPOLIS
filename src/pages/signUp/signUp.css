@@ -48,8 +48,10 @@
 }
 .signUp-modal > input {
     width: 70%;
-    height: 10%;
-    font-size: 2rem;
+    height: auto;
+    font-size: calc(0.7vh + 0.8vw);
+
+
 
     border-radius: 20px;
     outline: 0;
@@ -59,7 +61,8 @@
     flex-direction: row;
 
     padding: 2rem;
-    font-size: 4rem;
+    font-size: calc(1.4vh + 1.8vw);
+
 
 
 }
@@ -75,10 +78,10 @@
 }
 .signUp-modal > button{
     width: 50%;
-    height: 9%;
+    height: auto;
     color: #fff;
     background-color: #FF5C00;
-    font-size: 2rem;
+    font-size: calc(0.7vh + 0.8vw);
     border: 0 none;
     border-radius: 30px;
 

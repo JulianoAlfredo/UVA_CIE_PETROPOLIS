@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+.desaparecido-div{
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../../img/desaparecidoPage.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desaparecido-content{
+    background-color: #fff;
+
+    width: 80vw;
+    height: 90vh;
+
+    border-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+.desaparecido-content > p{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.table-desaparecidos{
+    width: 80%;
+    font-size: 5rem;
+    text-align: center;
+}
+.header-table-desaparecidos > td{
+    font-size: 3.2rem;
+    font-weight: bold;
+
+}
+.mid-item-table{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 1rem 0 ;
+}
