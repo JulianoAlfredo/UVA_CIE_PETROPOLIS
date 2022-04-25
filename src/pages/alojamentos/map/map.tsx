@@ -38,7 +38,7 @@ const MapPage = ({onDbl = (lat:string, lng:string) =>{}}) =>{
                               lng: postion.lng
                             }} options={{
                               label: {
-                                text: "ok",
+                                text: "Alojamento 01",
                                 className: 'map-marker'
                               }
                               
