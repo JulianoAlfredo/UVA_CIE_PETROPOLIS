@@ -19,7 +19,7 @@ export default function MainPage(){
                     <p>Olá, {usuario}</p>
                     <button onClick={() => { window.location.href = "http://localhost:3000/noticias"}} className='blue'>Notícias</button>
                     <button onClick={() => { window.location.href = "http://localhost:3000/desaparecidos"}} className='orange'>Desaparecidos</button>
-                    <button className='red'>Cadastro Desaparecido</button>
+                    <button onClick={() => { window.location.href = "http://localhost:3000/alojamentos"}}  className='red'>Alojamentos</button>
                 </div>
                 <div className='user-situation-main'>
                     <p>Sua situação no momento é de RISCO</p>

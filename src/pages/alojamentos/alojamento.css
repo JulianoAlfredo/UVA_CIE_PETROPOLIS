@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+.alojamento-div-content{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bgAlojamento{
+    background-image: url('../../img/backgroundRegister.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.div-fix{
+    min-width: 100vw;
+    min-height: 0vh;
+}
+.map-alojamento{
+    background-color: #fff;
+    width: 75vw;
+    height: 98vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+}
+.map-alojamento-utility{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    position: left;
+}
+.back-main{
+    width: 5vw;
+    height: 3vh;
+
+    color: #fff;
+    background-color: blue;
+    outline: none;
+    border: 0 none;
+    border-radius: 20px;
+    font-size: calc(1vh + 0.7rem);
+}
+.sac{
+    width: 5vw;
+    height: 3vh;
+
+    color: #fff;
+    background-color: green;
+    outline: none;
+    border: 0 none;
+    border-radius: 20px;
+    font-size: calc(1vh + 0.7rem);
+}
+.map-alojamento-utility > p{
+    
+    font-size: calc(1.5vh + 1rem);
+    font-weight: bold;
+    padding: 2rem;
+}
+.mapApp{
+    width: 70vw;
+    height: 90vh;
+    
+}
