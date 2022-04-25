@@ -13,19 +13,19 @@ const MapPage = ({onDbl = (lat:string, lng:string) =>{}}) =>{
         googleMapsApiKey:  GOOGLE_KEY,
     })
     const postion = {
-      lat: -22.853523, 
-      lng: -43.254074
+      lat:  -22.4712738, 
+      lng: -43.2081975
     }
 
     return(
      <div className="mapApp">
         {  isLoaded ? (
       <GoogleMap
-        options={{styles: style}}
+       
         mapContainerStyle={{width: '100%', height: '100%'}}
         center={postion}
         zoom={15}
-        onDblClick={(e) =>{onDbl(String(e.latLng?.toJSON().lat),String( e.latLng?.toJSON().lng))}}
+       
       >
         { /* Child components, such as markers, info windows, etc. */ }
         

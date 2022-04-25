@@ -8,24 +8,19 @@ export default function DesaparecidoPage(){
     const desaparecidosArr = [
         {
             nome: 'Juliano',
-            idade: 99,
-            bairro: 'petroleo'
+            idade: 18,
+            bairro: 'Coronel Veiga'
         },
         {
-            nome: 'Alek',
-            idade: 190,
-            bairro: 'Fumante'
+            nome: 'Danilo',
+            idade: 21,
+            bairro: 'Alto da Serra'
         },
         {
-            nome: 'Dilma',
-            idade: 999,
-            bairro: 'dinheiro'
+            nome: 'Guilherme',
+            idade: 19,
+            bairro: 'Castelânia'
         },
-        {
-            nome: 'bolsonaro',
-            idade: 120,
-            bairro: 'serrinha'
-        }
     ]
     return(
         <div className='desaparecido-div'>
