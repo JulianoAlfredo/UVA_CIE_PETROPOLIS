@@ -53,10 +53,10 @@
     font-weight: bold;
 }
 .header-main > button{
-    width: 13vw;
+    width: 15vw;
     height: 4.2vh;
 
-    font-size: calc(1.6vh + 0.2rem);
+    font-size: calc(0.7vh + 0.8vw);
     color: #fff;
     font-weight: bold;
     
@@ -70,7 +70,7 @@
     font-weight: bold;
     text-align: center;
 
-    padding: 5rem 0;
+    padding: 1.4vh 0;
 }
 .card-data-main{
     width: 100%;
@@ -96,12 +96,12 @@
 
 }
 .card-text-principal{
-    font-size: 3.6rem;
+    font-size: calc(1.8vh + 1vw);
     font-weight: bold;
     color: #fff;
 }
 .card-text-data{
-    font-size: 5.4rem;
+    font-size: calc(2vh + 2vw);
     font-weight: bold;
     color: #fff;
 }
