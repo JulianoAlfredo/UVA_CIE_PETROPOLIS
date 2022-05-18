@@ -17,9 +17,9 @@ export default function MainPage(){
             <div className='content-main'>
                 <div className='header-main'>
                     <p>Olá, {usuario}</p>
-                    <button onClick={() => { window.location.href = "http://localhost:3000/noticias"}} className='blue'>Notícias</button>
-                    <button onClick={() => { window.location.href = "http://localhost:3000/desaparecidos"}} className='orange'>Desaparecidos</button>
-                    <button onClick={() => { window.location.href = "http://localhost:3000/alojamentos"}}  className='red'>Alojamentos</button>
+                    <button onClick={() => { window.location.href = "https://uva-cie-petropolis.vercel.app/noticias"}} className='blue'>Notícias</button>
+                    <button onClick={() => { window.location.href = "https://uva-cie-petropolis.vercel.app/desaparecidos"}} className='orange'>Desaparecidos</button>
+                    <button onClick={() => { window.location.href = "https://uva-cie-petropolis.vercel.app/alojamentos"}}  className='red'>Alojamentos</button>
                 </div>
                 <div className='user-situation-main'>
                     <p>Sua situação no momento é de RISCO</p>

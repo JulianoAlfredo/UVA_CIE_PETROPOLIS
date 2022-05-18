@@ -12,7 +12,7 @@ export default function LoginPage(){
         }).then(async res => {
             if(res.status === 200){
                 localStorage.setItem("user_info", res.data)
-                window.location.href = "http://localhost:3000/"
+                window.location.href = "https://uva-cie-petropolis.vercel.app/"
             }
         })
     }
@@ -26,7 +26,7 @@ export default function LoginPage(){
                     <input onChange={(ev) =>{setPassword(ev.target.value)}}  type='password' placeholder='Digite sua senha ' />
                 </div>
                 <div className='login-modal-register'>
-                    <p>Não tem login?</p> <a href='http://localhost:3000/cadastrar'>CADASTRE-SE</a>
+                    <p>Não tem login?</p> <a href='https://uva-cie-petropolis.vercel.app/cadastrar'>CADASTRE-SE</a>
                 </div>
                 <button className="login-btn" onClick={() =>{loginUser(user, password)}}>Fazer login</button>               
                 

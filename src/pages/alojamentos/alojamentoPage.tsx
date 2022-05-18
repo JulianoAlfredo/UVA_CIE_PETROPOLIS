@@ -13,7 +13,7 @@ export default function AlojamentosPage(){
             </div>
             <div className="map-alojamento">
                 <div className="map-alojamento-utility">
-                    <button onClick={() => { window.location.href = "http://localhost:3000/"}} className='back-main'>Voltar</button>
+                    <button onClick={() => { window.location.href = "https://uva-cie-petropolis.vercel.app/"}} className='back-main'>Voltar</button>
                     <p>Alojamentos disponíveis</p>
                     <button className="sac">SAC</button>
                 </div>

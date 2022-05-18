@@ -37,7 +37,7 @@ export default function DesaparecidoPage(){
                     <td className='item-desparecido'>{item['nome']}</td>
                     <td className='mid-item-table'>{item['idade']}</td>
                     <td>{item['bairro']}</td>
-                    <a href='http://localhost:3000/desaparecidos'><img alt='Arrow' src={Arrow} /></a>
+                    <a href='https://uva-cie-petropolis.vercel.app/desaparecidos'><img alt='Arrow' src={Arrow} /></a>
                 </tr>
                 )}
 
